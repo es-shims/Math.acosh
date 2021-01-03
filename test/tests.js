@@ -15,13 +15,13 @@ module.exports = function (acosh, t) {
 		st.equal(acosh(0), NaN, 'acosh(0)');
 		st.equal(acosh(0.9999999), NaN, 'acosh(0.9999999)');
 		st.equal(acosh(-1e300), NaN, 'acosh(-1e300)');
-		st.equal(acosh(1e+99), 228.64907138697046, 'acosh(1e+99)');
+		st.ok(almostEqual(acosh(1e+99), 228.64907138697046), 'acosh(1e+99)');
 		st.equal(acosh(1), +0, 'acosh(1)');
 		st.equal(acosh(Infinity), Infinity, 'acosh(Infinity)');
-		st.equal(acosh(1234), 7.811163220849231, 'acosh(1234)');
-		st.equal(acosh(8.88), 2.8737631531629235, 'acosh(8.88)');
-		st.equal(acosh(1e160), 369.10676205960726, 'acosh(1e160)');
-		st.equal(acosh(Number.MAX_VALUE), 710.4758600739439, 'acosh(Number.MAX_VALUE)');
+		st.ok(almostEqual(acosh(1234), 7.811163220849231), 'acosh(1234)');
+		st.ok(almostEqual(acosh(8.88), 2.8737631531629235), 'acosh(8.88)');
+		st.ok(almostEqual(acosh(1e160), 369.10676205960726), 'acosh(1e160)');
+		st.ok(almostEqual(acosh(Number.MAX_VALUE), 710.4758600739439), 'acosh(Number.MAX_VALUE)');
 
 		st.end();
 	});
