@@ -1,7 +1,9 @@
 'use strict';
 
+var EPSILON = 2.220446049250313e-16; // Number.EPSILON
+
 var withinULPDistance = function withinULPDistance(result, expected) {
-	return Math.abs(1 - (result / expected)) < 8 * Number.EPSILON;
+	return Math.abs(1 - (result / expected)) < 8 * EPSILON;
 };
 
 var almostEqual = function (actual, expected) {
@@ -27,8 +29,10 @@ module.exports = function (acosh, t) {
 	});
 
 	t.test('works for EPSILON values near 1', function (st) {
-		var result = acosh(1 + Number.EPSILON);
-		var expected = Math.sqrt(2 * Number.EPSILON);
+		var result = acosh(1 + EPSILON);
+		var expected = Math.sqrt(2 * EPSILON);
+
+		console.log(result, expected);
 
 		st.ok(almostEqual(result, expected));
 		st.ok(withinULPDistance(result, expected));

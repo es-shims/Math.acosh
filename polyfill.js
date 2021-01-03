@@ -3,10 +3,11 @@
 var implementation = require('./implementation');
 
 var abs = Math.abs;
+var EPSILON = 2.220446049250313e-16; // Number.EPSILON
 
 var withinULPDistance = function withinULPDistance(result, expected) {
 	// eslint-disable-next-line no-magic-numbers
-	return abs(1 - (result / expected)) < 8 * Number.EPSILON;
+	return abs(1 - (result / expected)) < 8 * EPSILON;
 };
 
 module.exports = function getPolyfill() {
