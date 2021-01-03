@@ -1,7 +1,5 @@
 # Math.acosh <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-> ⚠️ This package is not published on npm yet
-
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
