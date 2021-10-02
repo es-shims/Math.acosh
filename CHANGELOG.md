@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/es-shims/Math.acosh/compare/v1.0.0...v1.0.1) - 2021-10-02
+
+### Commits
+
+- [actions] update workflows [`1e8ca1f`](https://github.com/es-shims/Math.acosh/commit/1e8ca1f969d91a381c8893614195696a4f3414bf)
+- [Refactor] remove ESM entry points [`301ed13`](https://github.com/es-shims/Math.acosh/commit/301ed13cfaf604b1a4c33c52f1d5cd998e327da6)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `aud`, `auto-changelog`, `tape` [`9330b21`](https://github.com/es-shims/Math.acosh/commit/9330b212c034ab20fb1ee5085eaf527ac6ee2baf)
+- [readme] add github actions/codecov badges [`8e2ea19`](https://github.com/es-shims/Math.acosh/commit/8e2ea198fbd060d30084e0514232822a567537d5)
+- [Tests] increase coverage [`5bc8e8b`](https://github.com/es-shims/Math.acosh/commit/5bc8e8bb0ae812fd4429b29ff9c7c362204ad46b)
+
 ## v1.0.0 - 2021-01-05
 
 ### Commits
