@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/Math.acosh/compare/v1.0.1...v1.0.2) - 2022-04-10
+
+### Commits
+
+- [actions] reuse common workflows [`4597264`](https://github.com/es-shims/Math.acosh/commit/459726418d7d32a3f5b4bab8bf6bcedd9299e1b0)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `safe-publish-latest`, `tape` [`605af67`](https://github.com/es-shims/Math.acosh/commit/605af67e3a02992f87f398bb023d05b0db839d07)
+- [actions] update codecov uploader [`0ca4604`](https://github.com/es-shims/Math.acosh/commit/0ca460468d2737063b0df5354e3aa6d426b8a686)
+- [Fix] avoid identifier `native`; it breaks node 0.4 [`906be19`](https://github.com/es-shims/Math.acosh/commit/906be19b9a47da257f02995d09deb11f7d9af52d)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`04a6daa`](https://github.com/es-shims/Math.acosh/commit/04a6daa2015a3cec5f4302810bb044f45d8d0b50)
+- [Deps] update `math.log1p` [`b4285ee`](https://github.com/es-shims/Math.acosh/commit/b4285eed5465bc1ecc2897e751ba46937a4fbfd0)
+- [Deps] update `math.log1p` [`9927341`](https://github.com/es-shims/Math.acosh/commit/992734127561662857dd99ba80e2ec0db09f3349)
+
 ## [v1.0.1](https://github.com/es-shims/Math.acosh/compare/v1.0.0...v1.0.1) - 2021-10-02
 
 ### Commits
