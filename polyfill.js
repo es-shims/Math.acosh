@@ -11,15 +11,15 @@ var withinULPDistance = function withinULPDistance(result, expected) {
 };
 
 module.exports = function getPolyfill() {
-	var native = Math.acosh;
+	var orig = Math.acosh;
 	if (
-		!native
+		!orig
 		// Chrome 40 loses Math.acosh precision with high numbers
-		|| native(Number.MAX_VALUE) === Infinity
+		|| orig(Number.MAX_VALUE) === Infinity
 		// Chrome < 54 has an inaccurate acosh for EPSILON deltas
-		|| withinULPDistance(native(1 + Number.EPSILON), Math.sqrt(2 * Number.EPSILON))
+		|| withinULPDistance(orig(1 + Number.EPSILON), Math.sqrt(2 * Number.EPSILON))
 	) {
 		return implementation;
 	}
-	return native;
+	return orig;
 };
